@@ -1,4 +1,47 @@
+1.26.30
+
 For UI 
 https://www.youtube.com/watch?v=gXlcwtS40LA&t=7417s
 
 For Backend
+https://www.youtube.com/watch?v=aYzT06aQkGI&t=735s
+
+-- We used Docker postgress database for online so other user don't need to install
+
+-- Use Prisam is adapter or mediator with postgress database and app
+
+-- Install prisma , @prisma/client
+
+-- @prisma/client is used for access table in api file
+
+-- We use @prisma-adaptor to used for connect with Auth.js for authentication - we no need to worry about user management things we can direct use prisma adapter and access all user things.
+
+-- Prisma steps 
+https://www.prisma.io/docs/getting-started/quickstart-sqlite
+
+--prisma Comamnd 
+
+npx prisma migrate dev
+
+-- Run docker
+
+ 1) docker-compose up -d
+
+ 2) npx prisma studio 
+
+ open (http://localhost:5555/)
+
+
+-- Used NextAuth.js for authentication for google 
+https://next-auth.js.org
+
+-- Added Users and session table then again we need to migrate table be using below command
+  
+   npx prisma migrate dev
+
+-- open prisma studio 
+   
+   npx prisma studio - (press command and then will open localhost:5500) For showing data and table
+
+
+-- used TanStack Query library to refresh the data in background , used in order page.
