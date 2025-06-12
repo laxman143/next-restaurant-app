@@ -1,4 +1,4 @@
-1.26.30
+1.55.34
 
 For UI 
 https://www.youtube.com/watch?v=gXlcwtS40LA&t=7417s
@@ -10,7 +10,9 @@ https://www.youtube.com/watch?v=aYzT06aQkGI&t=735s
 
 -- Use Prisam is adapter or mediator with postgress database and app
 
--- Install prisma , @prisma/client
+-- Install prisma , @prisma/client, @next-auth/prisma-adapter
+   - @next-auth/prisma-adapter here prisma adapter is use for mediator between app and next-auth 
+     in this we get directly get session and data 
 
 -- @prisma/client is used for access table in api file
 
@@ -44,4 +46,12 @@ https://next-auth.js.org
    npx prisma studio - (press command and then will open localhost:5500) For showing data and table
 
 
--- used TanStack Query library to refresh the data in background , used in order page.
+-- used TanStack Query library to refresh the data in background , used in order page. no need to refresh the page and call again 
+
+-- we are using useMutation Query to update the status which help to refresh the data once status is update - useMutation is React query
+
+-- install react-toastify library for toaster message
+   -- Added in layout for using through out the application 
+   --  <ToastContainer position="bottom-right" theme="dark" autoClose={3000}/>
+
+-- Use Zustand library for state management
